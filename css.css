@@ -1,0 +1,86 @@
+.title {
+  font-family: 'Oswald', sans-serif;
+  color: #222222;
+  text-align: center;
+  font-size: 5vh;
+}
+
+
+.body {
+    border: 5px solid red;
+    }
+.text {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 1.8;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.full {
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.down {
+  text-decoration: none;
+}
+
+.animated {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+
+.flash {
+  animation-name: flash;
+}
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.main {
+  height: 100vh;
+}
